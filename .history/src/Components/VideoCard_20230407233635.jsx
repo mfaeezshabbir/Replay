@@ -5,9 +5,9 @@ import { demoThumbnailUrl, demoVideoUrl, demoChannelUrl, demoChannelTitle } from
 import React from "react";
 function VideoCard() {
   return (
-    <React.Fragment>
+    <React>
       
-    </React.Fragment>
+    </React>
   )
 }
 
