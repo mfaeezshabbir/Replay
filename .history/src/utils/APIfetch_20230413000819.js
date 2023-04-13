@@ -1,10 +1,14 @@
 import axios from "axios";
 
-export const BASE_URL = "https://youtube-v31.p.rapidapi.com/";
+export const BASE_URL = "https://youtube-v31.p.rapidapi.com";
 
 const options = {
+  method: "GET",
   params: {
     maxResults: 50,
+    part: "snippet",
+    order: "date",
+    q: "ReactJS",
   },
   headers: {
     "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
@@ -18,11 +22,10 @@ export const APIfetch = async (url) => {
   return data;
 };
 
-
 // import axios from "axios";
 
 // const options = {
-//   method: 'GET',
+// method: 'GET',
 //   url: 'https://youtube-v31.p.rapidapi.com/search',
 //   params: {part: 'snippet', order: 'date', q: 'ReactJS'},
 //   headers: {

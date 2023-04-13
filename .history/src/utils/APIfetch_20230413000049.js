@@ -1,8 +1,9 @@
 import axios from "axios";
 
-export const BASE_URL = "https://youtube-v31.p.rapidapi.com/";
+export const BASE_URL = "https://youtube-v31.p.rapidapi.com";
 
 const options = {
+  //   method: 'GET',
   params: {
     maxResults: 50,
   },
@@ -22,7 +23,6 @@ export const APIfetch = async (url) => {
 // import axios from "axios";
 
 // const options = {
-//   method: 'GET',
 //   url: 'https://youtube-v31.p.rapidapi.com/search',
 //   params: {part: 'snippet', order: 'date', q: 'ReactJS'},
 //   headers: {

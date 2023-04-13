@@ -19,7 +19,12 @@ export const APIfetch = async (url) => {
 };
 
 
-// import axios from "axios";
+// /* This code is using the Axios library to make an HTTP GET request to the YouTube API. It sets some
+options for the request, including the URL, query parameters, and headers (including an API key).
+It then sends the request using `axios.request()` and logs the response data to the console if
+the request is successful, or logs any errors if the request fails. However, this code is
+currently commented out and not being used in the rest of the file. */
+import axios from "axios";
 
 // const options = {
 //   method: 'GET',

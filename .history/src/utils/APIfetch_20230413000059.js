@@ -1,12 +1,13 @@
 import axios from "axios";
 
-export const BASE_URL = "https://youtube-v31.p.rapidapi.com/";
+export const BASE_URL = "https://youtube-v31.p.rapidapi.com";
 
 const options = {
-  params: {
-    maxResults: 50,
-  },
-  headers: {
+    method: 'GET',
+    params: {
+      maxResults: 50,
+    },
+    headers: {
     "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
     "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
   },
@@ -14,7 +15,7 @@ const options = {
 
 export const APIfetch = async (url) => {
   const { data } = await axios.get(`${BASE_URL}/${url}`, options);
-
+  
   return data;
 };
 
@@ -22,7 +23,7 @@ export const APIfetch = async (url) => {
 // import axios from "axios";
 
 // const options = {
-//   method: 'GET',
+  // method: 'GET',
 //   url: 'https://youtube-v31.p.rapidapi.com/search',
 //   params: {part: 'snippet', order: 'date', q: 'ReactJS'},
 //   headers: {
